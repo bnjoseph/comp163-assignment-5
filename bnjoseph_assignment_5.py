@@ -32,3 +32,23 @@ for i in range(2, n):
 else:
     print(n, "is prime!")
 print()
+
+#3
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+#initialize product for more simple printing
+product = 0
+print("   ", end="")
+#first loop for printing column numbers
+for i in range(1, 11):
+    print(f"{i:4}", end="")
+print()
+#second loop. Nested loop for printing row numbers and products of columns and rows
+for i in range(1, 11):
+    #printing row numbers
+    print(f"{i:2}", end=" ")
+    #printing products in rows
+    for j in range(1, 11):
+        product = i * j
+        print(f"{product:4}", end="")
+    print()
